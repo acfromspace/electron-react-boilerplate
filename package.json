@@ -1,0 +1,61 @@
+{
+  "name": "electron-mocha-react-spectron",
+  "version": "0.1.0",
+  "description": "description",
+  "author": {
+    "name": "author"
+  },
+  "private": true,
+  "main": "public/electron.js",
+  "homepage": "./",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.0.2",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.0.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "e-start": "electron .",
+    "e-test": "mocha",
+    "e-build": "electron-builder -c.extraMetadata.main=build/electron.js",
+    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+  },
+  "build": {
+    "appId": "nonExistentID",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "electron": "^7.1.10",
+    "electron-builder": "22.2.0",
+    "mocha": "^7.0.0",
+    "spectron": "^9.0.0"
+  }
+}
