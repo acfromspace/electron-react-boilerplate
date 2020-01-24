@@ -6,7 +6,9 @@ export default function TextBoxInput() {
   return (
     <div>
       <p>
-        <div>{!show && <textarea>Enter information...</textarea>}</div>
+        <div>
+          {!show && <input type="text" placeholder="Enter information..." />}
+        </div>
         <button onClick={() => toggleShow(!show)}>Text Box Input</button>
       </p>
     </div>
