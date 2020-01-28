@@ -30,7 +30,7 @@ export default class ToDoList extends Component {
 
   deleteItem(id) {
     const list = [...this.state.list];
-    // filter out item being deleted.
+    // Filter out item being deleted.
     const updatedList = list.filter(item => item.id !== id);
     this.setState({ list: updatedList });
   }

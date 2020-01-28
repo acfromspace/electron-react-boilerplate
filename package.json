@@ -24,7 +24,8 @@
     "e-start": "electron .",
     "e-test": "mocha",
     "e-build": "electron-builder -c.extraMetadata.main=build/electron.js",
-    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json",
+    "dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "build": {
     "appId": "nonExistentID",
@@ -53,10 +54,12 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "concurrently": "^5.1.0",
     "electron": "^7.1.10",
     "electron-builder": "22.2.0",
     "electron-context-menu": "^0.15.2",
     "mocha": "^7.0.0",
-    "spectron": "^9.0.0"
+    "spectron": "^9.0.0",
+    "wait-on": "^4.0.0"
   }
 }
