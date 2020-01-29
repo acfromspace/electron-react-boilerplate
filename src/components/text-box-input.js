@@ -5,6 +5,7 @@ export default function TextBoxInput() {
 
   return (
     <div>
+      <h2>text-box-input.js</h2>
       <p>
         <div>
           {!show && <input type="text" placeholder="Enter information..." />}

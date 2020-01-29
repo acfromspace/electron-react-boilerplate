@@ -4,6 +4,7 @@ export default function StateManagement() {
   const [state, setState] = useState(0);
   return (
     <div>
+      <h2>state-management.js</h2>
       <p>
         You clicked {state} times! This is the state times 5: {state * 5}
       </p>

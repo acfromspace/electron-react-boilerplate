@@ -57,9 +57,10 @@
     "concurrently": "^5.1.0",
     "electron": "^7.1.10",
     "electron-builder": "22.2.0",
-    "electron-context-menu": "^0.15.2",
     "mocha": "^7.0.0",
+    "react-context-menu": "^3.0.2",
     "spectron": "^9.0.0",
+    "spectron-keys": "^0.0.1",
     "wait-on": "^4.0.0"
   }
 }

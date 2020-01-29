@@ -2,6 +2,7 @@ const Application = require("spectron").Application; // `Spectron`'s application
 const assert = require("assert"); // `Node.js`'s built in assertion library.
 const electronPath = require("electron"); // Locally installed development version of `Electron`.
 const path = require("path"); // `Node.js`'s helper utility for working with file paths.
+const spectronKeys = require("spectron-keys");
 
 const app = new Application({
   path: electronPath,
@@ -25,6 +26,21 @@ describe("Application launches! 🚀", function() {
     if (app && app.isRunning()) {
       return app.stop();
     }
+  });
+
+  it("on add button click a new item should be made ", async () => {
+    await app.client
+      // #addButton.click({ button: 2, x: 30, y: 50 })
+      // .click("#myButton", { button: 2, x: 50, y: 50 })
+      .click("#myButton")
+      .pause(1000)
+      .keys(spectronKeys.mapAccelerator("Shift+F10"))
+      .pause(1000)
+      .click("#myButton")
+      .pause(3000)
+      .keys(spectronKeys.mapAccelerator("Shift"));
+    const text = await app.client.getText("#someText");
+    return assert.equal(text, "I was clicked");
   });
 
   it("shows an initial window", async () => {
@@ -59,10 +75,15 @@ describe("Application launches! 🚀", function() {
 
   it("when link is clicked, should have 2 windows open", async () => {
     await app.client.waitUntilWindowLoaded();
-    await app.client.click(".App-link");
+    await app.client.click(".App-link").pause(2000);
     const count = await app.client.getWindowCount();
     return assert.equal(count, 2);
   });
+
+  // it("right-click", async () => {
+  //   await app.client.waitUntilWindowLoaded();
+  //   await app.client.click({"#myButton", button: "right"});
+  // });
 
   // Writing text.
 

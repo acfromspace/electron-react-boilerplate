@@ -3,6 +3,10 @@ import StateManagement from "./state-management";
 import TextBoxInput from "./text-box-input";
 import ToDoList from "./to-do-list";
 import Pokemon from "./pokemon";
+import ElectronContextMenu from "./electron-context-menu";
+import TodoApp from "./to-do-list-2/to-do-app";
+
+import ContextMenu from "react-context-menu";
 
 /**
  * This function renders the application.
@@ -15,6 +19,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <h2>app.js</h2>
           <p>
             Edit <code>src/app.js</code> and save to reload.
           </p>
@@ -29,7 +34,9 @@ export default class App extends Component {
           <StateManagement />
           <TextBoxInput />
           <ToDoList />
+          <TodoApp />
           <Pokemon />
+          <ElectronContextMenu />
         </header>
       </div>
     );

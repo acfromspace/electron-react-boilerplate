@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 
 export default class Pokemon extends Component {
-  constructor() {
-    super();
-    this.state = null;
-  }
+  state = null;
+
   componentDidMount() {
     fetch("https://pokeapi.co/api/v2/pokemon/gengar/")
       .then(res => res.json())
@@ -17,6 +15,7 @@ export default class Pokemon extends Component {
     const style = { textTransform: "capitalize" };
     return (
       <div>
+        <h2>pokemon.js</h2>
         {pokemon ? (
           <>
             <img
