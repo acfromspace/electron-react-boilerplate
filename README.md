@@ -5,67 +5,14 @@
 ```
 // Install and run React & Electron.
 
+yarn global add foreman
 yarn
-yarn start
-yarn e-start
+yarn dev
 
 // Test the application.
 
-yarn e-test
-
-// Build the application then create an executable.
-
-yarn build
-yarn e-build
-run the .exe within the dist/ folder
+yarn electron-test
 ```
-
-<!-- ## Documentation
-
-- Documentation.js: `firefox docs/index.html`
-- JSDocs: `firefox out/index.html`
-- JSDocs Docdash: `firefox out-2/index.html`
-
-### document.js
-
-```bash
-sudo npm install -g documentation
-documentation build functions/** -f html -o docs
-firefox docs/index.html
-```
-
-### JSDocs Default
-
-```bash
-sudo npm install -g jsdoc
-jsdoc functions/**
-firefox out/index.html
-```
-
-### JSDocs Docdash
-
-```bash
-npm install --save-dev docdash
-```
-
-```js
-// package.json
-"script": {
-  "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
-}
-
-// jsdoc.json
-{
-    "opts": {
-    "template": "node_modules/docdash"
-    }
-}
-```
-
-```bash
-npm run generate-docs functions/**
-firefox out/index.html
-``` -->
 
 ## Errors & Fixes
 
