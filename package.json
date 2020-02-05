@@ -1,5 +1,5 @@
 {
-  "name": "electron-mocha-react-spectron",
+  "name": "electron-react-boilerplate",
   "version": "0.1.0",
   "description": "description",
   "author": {
@@ -7,6 +7,7 @@
   },
   "private": true,
   "main": "src/electron.js",
+  "electron-dev": "ELECTRON_START_URL=http://localhost:5000 electron .",
   "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.0.2",
@@ -21,30 +22,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "nf start",
     "electron": "electron .",
-    "electron-build": "electron-builder -c.extraMetadata.main=build/electron.js",
-    "electron-test": "mocha",
-    "electron-start": "node src/electron-start",
-    "react-start": "BROWSER=none react-scripts start"
-  },
-  "build": {
-    "appId": "nonExistentID",
-    "files": [
-      "build/**/*",
-      "node_modules/**/*"
-    ],
-    "directories": {
-      "buildResources": "assets"
-    }
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "dev": "nf start",
+    "testcafe": "testcafe \"electron:.\" \"test\"",
+    "electron-build": "electron-builder -c.extraMetadata.main=build/electron.js"
   },
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
+      "not ie <= 11",
       "not op_mini all"
     ],
     "development": [
@@ -54,14 +41,11 @@
     ]
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "concurrently": "^5.1.0",
-    "electron": "^7.1.10",
+    "electron": "^8.0.0",
     "electron-builder": "22.2.0",
-    "mocha": "^7.0.0",
+    "foreman": "^3.0.1",
     "react-context-menu": "^3.0.2",
-    "spectron": "^9.0.0",
-    "spectron-keys": "^0.0.1",
-    "wait-on": "^4.0.0"
+    "testcafe": "^1.8.1",
+    "testcafe-browser-provider-electron": "^0.0.14"
   }
 }

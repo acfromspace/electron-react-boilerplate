@@ -1,2 +1,2 @@
-react: npm run react-start
-electron: npm run electron-start
+react: BROWSER=none npm start
+electron: node src/electron-wait-react

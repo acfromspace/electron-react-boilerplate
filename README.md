@@ -5,13 +5,13 @@
 ```
 // Install and run React & Electron.
 
-yarn global add foreman
 yarn
 yarn dev
 
 // Test the application.
 
-yarn electron-test
+yarn build
+yarn testcafe
 ```
 
 ## Errors & Fixes

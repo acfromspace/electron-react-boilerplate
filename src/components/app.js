@@ -19,6 +19,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <p id={"testingReact"}>Testing File</p>
           <h2>app.js</h2>
           <p>
             Edit <code>src/app.js</code> and save to reload.
