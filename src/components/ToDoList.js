@@ -45,7 +45,7 @@ export default class ToDoList extends Component {
   render() {
     return (
       <div>
-        <h2>to-do-list.js</h2>
+        <h2>ToDoList.js</h2>
         <input
           type="text"
           placeholder="Enter information..."

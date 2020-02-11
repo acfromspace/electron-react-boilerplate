@@ -12,6 +12,11 @@ yarn dev
 
 yarn build
 yarn testcafe
+
+// Make an executable.
+
+yarn build
+yarn electron-builder
 ```
 
 ## Errors & Fixes

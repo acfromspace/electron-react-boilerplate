@@ -1,6 +1,6 @@
 {
   "name": "electron-react-boilerplate",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "description",
   "author": {
     "name": "author"
@@ -9,15 +9,6 @@
   "main": "public/electron.js",
   "electron-dev": "ELECTRON_START_URL=http://localhost:5000 electron .",
   "homepage": "./",
-  "build": {
-    "files": [
-      "build/",
-      "node_modules/",
-      "public/",
-      "src/",
-      "package.json"
-    ]
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.0.2",
     "@testing-library/react": "^9.4.0",
@@ -34,8 +25,8 @@
     "electron": "electron .",
     "dev": "nf start",
     "testcafe": "testcafe \"electron:.\" \"test\"",
-    "electron-build": "electron-builder",
-    "electron-build2": "electron-builder -c.extraMetadata.main=build/index.html"
+    "electron-builder": "electron-builder",
+    "electron-builder-test-not-stable": "electron-builder -c.extraMetadata.main=build/index.html"
   },
   "browserslist": {
     "production": [
