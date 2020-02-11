@@ -6,9 +6,18 @@
     "name": "author"
   },
   "private": true,
-  "main": "src/electron.js",
+  "main": "public/electron.js",
   "electron-dev": "ELECTRON_START_URL=http://localhost:5000 electron .",
   "homepage": "./",
+  "build": {
+    "files": [
+      "build/",
+      "node_modules/",
+      "public/",
+      "src/",
+      "package.json"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.0.2",
     "@testing-library/react": "^9.4.0",
@@ -25,7 +34,8 @@
     "electron": "electron .",
     "dev": "nf start",
     "testcafe": "testcafe \"electron:.\" \"test\"",
-    "electron-build": "electron-builder -c.extraMetadata.main=build/electron.js"
+    "electron-build": "electron-builder",
+    "electron-build2": "electron-builder -c.extraMetadata.main=build/index.html"
   },
   "browserslist": {
     "production": [
@@ -44,7 +54,6 @@
     "electron": "^8.0.0",
     "electron-builder": "22.2.0",
     "foreman": "^3.0.1",
-    "react-context-menu": "^3.0.2",
     "testcafe": "^1.8.1",
     "testcafe-browser-provider-electron": "^0.0.14"
   }

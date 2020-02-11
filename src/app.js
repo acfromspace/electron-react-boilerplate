@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import StateManagement from "./state-management";
-import TextBoxInput from "./text-box-input";
-import ToDoList from "./to-do-list";
-import Pokemon from "./pokemon";
-import ElectronContextMenu from "./electron-context-menu";
-import TodoApp from "./to-do-list-2/to-do-app";
+import StateManagement from "./components/state-management";
+import TextBoxInput from "./components/text-box-input";
+import ToDoList from "./components/to-do-list";
+import Pokemon from "./components/pokemon";
+import ElectronContextMenu from "./components/electron-context-menu";
+import TodoApp from "./components/to-do-list-2/to-do-app";
 
-import ContextMenu from "react-context-menu";
+// import ContextMenu from "react-context-menu";
 
 /**
  * This function renders the application.
