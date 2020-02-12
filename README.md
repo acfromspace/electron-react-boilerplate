@@ -3,6 +3,11 @@
 ## Getting Started!
 
 ```
+// Global packages needed.
+sudo npm install -g testcafe
+```
+
+```
 // Install and run React & Electron.
 
 yarn

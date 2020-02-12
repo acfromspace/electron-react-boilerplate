@@ -1,6 +1,6 @@
 import { Selector } from "testcafe";
 
-fixture`testing test`.page`../build/index.html`;
+fixture`testing test`.page`../public/index.html`;
 
 test("TEST #1", async t => {
   console.log("FIRING THE TEST!");
