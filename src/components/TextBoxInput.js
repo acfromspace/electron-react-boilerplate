@@ -7,9 +7,7 @@ export default function TextBoxInput() {
     <div>
       <h2>TextBoxInput.js</h2>
       <p>
-        <div>
-          {!show && <input type="text" placeholder="Enter information..." />}
-        </div>
+        {!show && <input type="text" placeholder="Enter information..." />}
         <button onClick={() => toggleShow(!show)}>Text Box Input</button>
       </p>
     </div>

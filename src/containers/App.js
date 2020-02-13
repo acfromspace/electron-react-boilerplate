@@ -17,7 +17,7 @@ export default class App extends Component {
       <div className="App">
         <header className="App-header">
           <h2>App.js</h2>
-          <p id={"testingReact"}>Testing File</p>
+          <p id={"testTestcafe"}>Testcafe test!</p>
           <p>
             Edit <code>src/containers/App.js</code> and save to reload.
           </p>
@@ -29,11 +29,11 @@ export default class App extends Component {
           >
             Learn React!
           </a>
-          <Pokemon />
+          {/* <Pokemon />
           <StateManagement />
           <TextBoxInput />
           <ToDoApp />
-          <ToDoList />
+          <ToDoList /> */}
         </header>
       </div>
     );

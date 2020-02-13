@@ -3,17 +3,17 @@
 ## Getting Started!
 
 ```
-// Global packages needed.
-sudo npm install -g testcafe
-```
-
-```
 // Install and run React & Electron.
 
 yarn
 yarn dev
 
-// Test the application.
+// Test components.
+
+yarn build
+yarn test
+
+// Test end to end.
 
 yarn build
 yarn testcafe
