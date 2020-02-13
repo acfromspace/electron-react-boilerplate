@@ -29,11 +29,11 @@ export default class App extends Component {
           >
             Learn React!
           </a>
-          {/* <Pokemon />
+          <Pokemon />
           <StateManagement />
           <TextBoxInput />
           <ToDoApp />
-          <ToDoList /> */}
+          <ToDoList />
         </header>
       </div>
     );
