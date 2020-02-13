@@ -11,7 +11,7 @@ yarn dev
 // Test components.
 
 yarn build
-yarn test
+yarn test a
 
 // Test end to end.
 
